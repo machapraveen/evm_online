@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Design</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        footer {
+            padding: 40px 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .contact,
+        .links,
+        .feedback {
+            flex-basis: 30%;
+            margin-bottom: 30px;
+        }
+        .contact h3,
+        .links h3,
+        .followUs h3,
+        .feedback h3 {
+            margin-bottom: 10px;
+        }
+        .links {
+            display: flex;
+            justify-content: space-between;
+        }
+        .links div {
+            margin-right: 20px;
+        }
+        .links ul {
+            list-style: none;
+        }
+        .links ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .input-container {
+            display: flex;
+            align-items: center;
+        }
+        .input-container input {
+            flex: 1;
+            padding: 8px;
+            border: none;
+            outline: none;
+        }
+        .input-container button {
+            background-color: #0077b6;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            cursor: pointer;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            color: #fff;
+            font-size: 24px;
+            margin-right: 10px;
+        }
+        .credits {
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .button {
+            justify-content: center;
+            align-items: center;
+            background-color: #001124;
+            display: flex;
+            font-size: 40px;
+            color: #fff;
+            font-weight: 400;
+            text-align: justify;
+            padding: 80px 60px;
+            border: none;
+            cursor: pointer;
+        }
+        @media (max-width: 991px) {
+            .button {
+                padding: 0 20px;
+            }
+            .container {
+                padding: 0 20px;
+            }
+            .contact,
+            .links,
+            .feedback {
+                flex-basis: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <div class="container">
+            <div class="contact">
+                <h3>Contact:</h3>
+                <p>+91 96180 08341</p>
+                <p>+91 96180 08341</p>
+                <h3>Helpline Number:</h3>
+                <p>xxxxxxxxx</p>
+                <p>xxxxxxxxx</p>
+                <h3>Email:</h3>
+                <p>pandu@electionindia.gov.in</p>
+                <p>surya@electionindia.gov.in</p>
+            </div>
+            <div class="links">
+                <div class="getIn">
+                    <h3>Get In</h3>
+                    <ul>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="#">Login</a></li>
+                    </ul>
+                </div>
+                <div class="knowMore">
+                    <h3>Know more</h3>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Steps</a></li>
+                    </ul>
+                </div>
+                <div class="followUs">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="feedback">
+                <h3>Quick Feedback:</h3>
+                <div class="input-container">
+                    <input type="text" placeholder="Enter your feedback">
+                    <button>Send</button>
+                </div>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <div class="credits">
+                <p>&copy; pandu</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function handleClick() {
+            console.log('Button clicked!');
+        }
+    </script>
+</body>
+</html>

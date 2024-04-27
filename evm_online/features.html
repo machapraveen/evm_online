@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .div {
+      align-items: center;
+      background-color: #fff;
+      display: flex;
+      font-size: 25px;
+      color: #010029;
+      font-weight: 400;
+      justify-content: center;
+      padding: 80px 60px;
+    }
+    @media (max-width: 991px) {
+      .div {
+        padding: 0 20px;
+      }
+    }
+    .div-2 {
+      display: flex;
+      margin-top: 80px;
+      width: 630px;
+      max-width: 100%;
+      gap: 20px;
+    }
+    @media (max-width: 991px) {
+      .div-2 {
+        flex-wrap: wrap;
+        margin-top: 40px;
+      }
+    }
+    .button {
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
+    .img {
+      aspect-ratio: 0.01;
+      object-fit: auto;
+      object-position: center;
+      width: 7px;
+      fill: #015fc7;
+      stroke-width: 7px;
+      stroke: #015fc7;
+      border-color: rgba(1, 95, 199, 1);
+      border-style: solid;
+      border-width: 7px;
+      margin: auto 0;
+    }
+    .div-3 {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      flex-basis: 0;
+      width: fit-content;
+    }
+    @media (max-width: 991px) {
+      .div-3 {
+        max-width: 100%;
+      }
+    }
+    .button-2 {
+      display: flex;
+      gap: 20px;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
+    @media (max-width: 991px) {
+      .button-2 {
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+    .img-2 {
+      aspect-ratio: 1.12;
+      object-fit: auto;
+      object-position: center;
+      width: 83px;
+    }
+    .div-5 {
+      font-family: DM Serif Display, sans-serif;
+      flex-grow: 1;
+      flex-basis: auto;
+      margin: auto 0;
+    }
+    @media (max-width: 991px) {
+      .div-5 {
+        max-width: 100%;
+      }
+    }
+    .button-3 {
+      display: flex;
+      margin-top: 59px;
+      gap: 20px;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
+    @media (max-width: 991px) {
+      .button-3 {
+        max-width: 100%;
+        flex-wrap: wrap;
+        margin-top: 40px;
+      }
+    }
+    .img-3 {
+      aspect-ratio: 0.99;
+      object-fit: auto;
+      object-position: center;
+      width: 73px;
+    }
+    .div-7 {
+      font-family: DM Serif Display, sans-serif;
+      flex-grow: 1;
+      flex-basis: auto;
+      margin: auto 0;
+    }
+    @media (max-width: 991px) {
+      .div-7 {
+        max-width: 100%;
+      }
+    }
+    .button-4 {
+      display: flex;
+      margin-top: 55px;
+      gap: 20px;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
+    @media (max-width: 991px) {
+      .button-4 {
+        max-width: 100%;
+        flex-wrap: wrap;
+        margin-top: 40px;
+      }
+    }
+    .img-4 {
+      aspect-ratio: 0.99;
+      object-fit: auto;
+      object-position: center;
+      width: 72px;
+    }
+    .div-9 {
+      font-family: DM Serif Display, sans-serif;
+      align-self: start;
+      margin-top: 17px;
+      flex-grow: 1;
+      flex-basis: auto;
+    }
+    @media (max-width: 991px) {
+      .div-9 {
+        max-width: 100%;
+      }
+    }
+    .button-5 {
+      display: flex;
+      margin-top: 44px;
+      width: 258px;
+      max-width: 100%;
+      gap: 20px;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
+    @media (max-width: 991px) {
+      .button-5 {
+        margin-top: 40px;
+      }
+    }
+    .img-5 {
+      aspect-ratio: 0.99;
+      object-fit: auto;
+      object-position: center;
+      width: 74px;
+    }
+    .div-11 {
+      font-family: DM Serif Display, sans-serif;
+      flex-grow: 1;
+      flex-basis: auto;
+      margin: auto 0;
+    }
+    .button-6 {
+      display: flex;
+      margin-top: 53px;
+      gap: 20px;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
+    @media (max-width: 991px) {
+      .button-6 {
+        max-width: 100%;
+        flex-wrap: wrap;
+        margin-top: 40px;
+      }
+    }
+    .img-6 {
+      aspect-ratio: 0.99;
+      object-fit: auto;
+      object-position: center;
+      width: 72px;
+    }
+    .div-13 {
+      font-family: DM Serif Display, sans-serif;
+      flex-grow: 1;
+      flex-basis: auto;
+      margin: auto 0;
+    }
+    @media (max-width: 991px) {
+      .div-13 {
+        max-width: 100%;
+      }
+    }
+    .button-7 {
+      display: flex;
+      margin-top: 50px;
+      gap: 20px;
+      background: none;
+      border: none;
+      padding: 0;
+      cursor: pointer;
+    }
+    @media (max-width: 991px) {
+      .button-7 {
+        max-width: 100%;
+        flex-wrap: wrap;
+        margin-top: 40px;
+      }
+    }
+    .img-7 {
+      aspect-ratio: 0.99;
+      object-fit: auto;
+      object-position: center;
+      width: 73px;
+    }
+    .div-15 {
+      font-family: DM Serif Display, sans-serif;
+      flex-grow: 1;
+      flex-basis: auto;
+      margin: auto 0;
+    }
+    @media (max-width: 991px) {
+      .div-15 {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="div">
+    <div class="div-2">
+      <button class="button" onClick={handleButtonClick}>
+        <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/56c149bc2afbbfbd152f3178559df0efe8de56acd79d5a948deaf9ada7c5330b?apiKey=efc8f4ac5aba409689f0da5ae806b0e4&" class="img" />
+      </button>
+      <div class="div-3">
+        <button class="button-2" onClick={handleButton2Click}>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/42790686f1fed6b192c1b4bfc4728c1258a590ada88f1c52346b388680b1bf99?apiKey=efc8f4ac5aba409689f0da5ae806b0e4&" class="img-2" />
+          <div class="div-5">Secured by 256 bit encryption</div>
+        </button>
+        <button class="button-3" onClick={handleButton3Click}>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/2e485e469f331ef3f41d920c0a5f215ff3dde6ec675693f60d6209c071cda747?apiKey=efc8f4ac5aba409689f0da5ae806b0e4&" class="img-3" />
+          <div class="div-7">Backed by ethereum based technology</div>
+        </button>
+        <button class="button-4" onClick={handleButton4Click}>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c48266875859969eacd5ade9bdd9a6bfda85ce0083e7bd6682ef228ab49e3755?apiKey=efc8f4ac5aba409689f0da5ae806b0e4&" class="img-4" />
+          <div class="div-9">Verifiable transactions</div>
+        </button>
+        <button class="button-5" onClick={handleButton5Click}>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/56c74a8b1171a19e809931e4875fa2dc4ba8d5026f294dd2074cbc01558fda2a?apiKey=efc8f4ac5aba409689f0da5ae806b0e4&" class="img-5" />
+          <div class="div-11">Easy to use</div>
+        </button>
+        <button class="button-6" onClick={handleButton6Click}>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/e51606c828ba9843e208ce08200dfe921f75c021a395b97e45b88393ec0ae80a?apiKey=efc8f4ac5aba409689f0da5ae806b0e4&" class="img-6" />
+          <div class="div-13">Cheaper than ballot voting system</div>
+        </button>
+        <button class="button-7" onClick={handleButton7Click}>
+          <img loading="lazy" src="https://cdn.builder.io/api/v1/image/assets/TEMP/c85cc2f24651239575e93f19ca9e57fb2c0c86994d77615b26e918b7d40df3b8?apiKey=efc8f4ac5aba409689f0da5ae806b0e4&" class="img-7" />
+          <div class="div-15">Faster voting process</div>
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

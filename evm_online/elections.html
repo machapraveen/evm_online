@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upcoming Elections</title>
+  <style>
+    .div {
+      background-color: #001124;
+      display: flex;
+      align-items: center;
+      font-size: 25px;
+      color: #000;
+      font-weight: 400;
+      justify-content: center;
+      padding: 78px 60px;
+    }
+    @media (max-width: 991px) {
+      .div {
+        padding: 0 20px;
+      }
+    }
+    .div-2 {
+      display: flex;
+      width: 100%;
+      max-width: 1067px;
+      flex-direction: column;
+    }
+    @media (max-width: 991px) {
+      .div-2 {
+        max-width: 100%;
+      }
+    }
+    .div-3 {
+      align-self: end;
+      display: flex;
+      width: 746px;
+      max-width: 100%;
+      align-items: flex-start;
+      gap: 20px;
+      color: #fff;
+    }
+    @media (max-width: 991px) {
+      .div-3 {
+        flex-wrap: wrap;
+      }
+    }
+    .div-4 {
+      font-family: DM Serif Display, sans-serif;
+      flex-grow: 1;
+      flex-basis: auto;
+      margin: auto 0;
+      background: none;
+      border: none;
+      color: inherit;
+      font: inherit;
+      cursor: pointer;
+    }
+    .div-5 {
+      align-self: start;
+      display: flex;
+      margin-top: 8px;
+      flex-direction: column;
+      white-space: nowrap;
+    }
+    @media (max-width: 991px) {
+      .div-5 {
+        white-space: initial;
+      }
+    }
+    .div-6 {
+      font-family: DM Serif Display, sans-serif;
+      background: none;
+      border: none;
+      color: inherit;
+      font: inherit;
+      cursor: pointer;
+    }
+    .div-7 {
+      border-color: rgba(0, 90, 199, 1);
+      border-style: solid;
+      border-width: 3px;
+      background-color: #005ac7;
+      margin-top: 7px;
+      height: 3px;
+    }
+    .div-8 {
+      font-family: DM Serif Display, sans-serif;
+      margin: auto 0;
+      background: none;
+      border: none;
+      color: inherit;
+      font: inherit;
+      cursor: pointer;
+    }
+    .div-9 {
+      font-family: DM Serif Display, sans-serif;
+      border-radius: 5px;
+      background-color: #015fc7;
+      align-self: start;
+      white-space: nowrap;
+      justify-content: center;
+      padding: 9px 45px;
+      border: none;
+      color: inherit;
+      font: inherit;
+      cursor: pointer;
+    }
+    @media (max-width: 991px) {
+      .div-9 {
+        white-space: initial;
+        padding: 0 20px;
+      }
+    }
+    .div-10 {
+      color: #fff;
+      font-family: DM Serif Display, sans-serif;
+      margin-top: 138px;
+    }
+    @media (max-width: 991px) {
+      .div-10 {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+    .div-11 {
+      border-radius: 5px;
+      background-color: #c4c4c4;
+      display: flex;
+      margin-top: 22px;
+      gap: 20px;
+      padding: 23px 27px;
+      border: none;
+      color: inherit;
+      font: inherit;
+      cursor: pointer;
+    }
+    @media (max-width: 991px) {
+      .div-11 {
+        max-width: 100%;
+        flex-wrap: wrap;
+        padding: 0 20px;
+      }
+    }
+    .div-12 {
+      font-family: DM Serif Display, sans-serif;
+      flex-grow: 1;
+      flex-basis: auto;
+    }
+    .div-13 {
+      font-family: DM Serif Display, sans-serif;
+      flex-grow: 1;
+      flex-basis: auto;
+    }
+    .div-14 {
+      color: #fff;
+      font-family: DM Serif Display, sans-serif;
+      margin-top: 50px;
+    }
+    @media (max-width: 991px) {
+      .div-14 {
+        max-width: 100%;
+        margin-top: 40px;
+      }
+    }
+    .div-15 {
+      border-radius: 5px;
+      background-color: #c4c4c4;
+      display: flex;
+      margin-top: 28px;
+      gap: 20px;
+      padding: 20px 16px;
+      border: none;
+      color: inherit;
+      font: inherit;
+      cursor: pointer;
+    }
+    @media (max-width: 991px) {
+      .div-15 {
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+    .div-16 {
+      font-family: DM Serif Display, sans-serif;
+      flex-grow: 1;
+      flex-basis: auto;
+    }
+    .div-17 {
+      font-family: DM Serif Display, sans-serif;
+      align-self: start;
+      flex-grow: 1;
+      flex-basis: auto;
+    }
+    .div-18 {
+      border-radius: 5px;
+      background-color: #c4c4c4;
+      display: flex;
+      margin-top: 35px;
+      gap: 20px;
+      padding: 20px 16px;
+      border: none;
+      color: inherit;
+      font: inherit;
+      cursor: pointer;
+    }
+    @media (max-width: 991px) {
+      .div-18 {
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+    .div-19 {
+      font-family: DM Serif Display, sans-serif;
+      flex-grow: 1;
+      flex-basis: auto;
+    }
+    .div-20 {
+      font-family: DM Serif Display, sans-serif;
+      flex-grow: 1;
+      flex-basis: auto;
+    }
+    .div-21 {
+      border-radius: 5px;
+      background-color: #c4c4c4;
+      display: flex;
+      margin-top: 35px;
+      gap: 20px;
+      padding: 20px 16px;
+      border: none;
+      color: inherit;
+      font: inherit;
+      cursor: pointer;
+    }
+    @media (max-width: 991px) {
+      .div-21 {
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+    .div-22 {
+      font-family: DM Serif Display, sans-serif;
+      flex-grow: 1;
+      flex-basis: auto;
+    }
+    .div-23 {
+      font-family: DM Serif Display, sans-serif;
+      flex-grow: 1;
+      flex-basis: auto;
+    }
+    .div-24 {
+      border-radius: 5px;
+      background-color: #c4c4c4;
+      display: flex;
+      margin-top: 35px;
+      gap: 20px;
+      padding: 20px 16px;
+      border: none;
+      color: inherit;
+      font: inherit;
+      cursor: pointer;
+    }
+    @media (max-width: 991px) {
+      .div-24 {
+        max-width: 100%;
+        flex-wrap: wrap;
+      }
+    }
+    .div-25 {
+      font-family: DM Serif Display, sans-serif;
+      flex-grow: 1;
+      flex-basis: auto;
+    }
+    .div-26 {
+      font-family: DM Serif Display, sans-serif;
+      flex-grow: 1;
+      flex-basis: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="div">
+    <div class="div-2">
+      <div class="div-3">
+        <button class="div-4" onclick="window.location.href='personal-info.html'">Personal Info</button>
+        <div class="div-5">
+          <button class="div-6" onclick="window.location.href='elections.html'">Elections</button>
+          <div class="div-7"></div>
+        </div>
+        <button class="div-8" onclick="window.location.href='footer.html'">Contact</button>>
+        <button class="div-9" onclick="window.location.href='rule.html'">Vote</button>
+      </div>
+      <div class="div-10">Upcoming Elections :</div>
+      <button class="div-11" onClick={handleUpElectionClick}>
+        <div class="div-12">UP state election:</div>
+        <div class="div-13">02-04-2022</div>
+      </button>
+      <div class="div-14">Other Elections :</div>
+      <button class="div-15" onClick={handleManipurElectionClick}>
+        <div class="div-16">Manipur state Election:</div>
+        <div class="div-17">04-04-2022</div>
+      </button>
+      <button class="div-18" onClick={handleChhatishgarhElectionClick}>
+        <div class="div-19">Chhatishgarh state Election:</div>
+        <div class="div-20">12-04-2022</div>
+      </button>
+      <button class="div-21" onClick={handleBangluruElectionClick}>
+        <div class="div-22">Bangluru state Election:</div>
+        <div class="div-23">20-04-2022</div>
+      </button>
+      <button class="div-24" onClick={handleGurgaonElectionClick}>
+        <div class="div-25">Gurgaon Municipal Corporation</div>
+        <div class="div-26">26-04-2022</div>
+      </button>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Voting Panel</title>
+  <style>
+    #thankYouMessage {
+      display: none;
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      font-size: 36px;
+      font-weight: bold;
+      color: #ffffff;
+      background-color: #4CAF50;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body class="bg-blue-900 text-white">
+  <!-- ... (existing code remains the same) ... -->
+
+  <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded mt-4 w-full" onclick="showThankYouMessage()">
+    SUBMIT
+  </button>
+
+  <div id="thankYouMessage">
+    Thanks for voting, your vote is your voice
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    function showThankYouMessage() {
+      document.getElementById("thankYouMessage").style.display = "block";
+    }
+  </script>
+</body>
+</html>

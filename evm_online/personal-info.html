@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Info</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1c1c1c;
+            color: #fff;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .header nav ul li a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        .vote-btn {
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+
+        .profile {
+            display: flex;
+            align-items: center;
+            margin-top: 40px;
+        }
+
+        .profile-picture {
+            text-align: center;
+        }
+
+        .profile-picture img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .change-picture {
+            margin-top: 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+        }
+
+        .profile-info {
+            margin-left: 40px;
+        }
+
+        .edit-profile {
+            margin-top: 20px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <nav>
+                <ul>
+                    <li><a href="personal-info.html">Personal Info</a></li>
+                    <li><a href="elections.html">Elections</a></li>
+                    <li><a href="footer.html">Contact</a></li>
+                    <li><a href="rule.html" class="vote-btn">Vote</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="profile">
+            <div class="profile-picture">
+                <img src="profile-picture.png" alt="Profile Picture">
+                <button class="change-picture">Change profile picture</button>
+            </div>
+            <div class="profile-info">
+                <h2>Name: John Doe</h2>
+                <p>Father's/Mother's Name: Papa John Doe</p>
+                <p>Age: 19</p>
+                <p>Email: john.doe@gmail.com</p>
+                <p>Mobile Number: 91 9191505010</p>
+                <p>Aadhar Number: 6100 4080 9126 0909</p>
+                <p>Address: XYZ, Street No. 92, Gurgaon, Uttar Pardesh, 100021</p>
+                <p>Eligible: True</p>
+                <p>Verified: True</p>
+                <button class="edit-profile">Edit Profile</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

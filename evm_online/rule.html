@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Election Rules</title>
+</head>
+<body class="bg-gray-100">
+  <div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title">This election is being conducted by the election commission of India.</h5>
+            <p class="card-text">You, as being a member of the constituency under the constituencies of Uttar Pradesh State Election, are allowed to vote. Please take the following steps in order to cast a valid vote. You are requested to cast vote on your own decision diet not by being pressurized or terrorized by someone. If someone threatens you for making a voting decision please contact the given helpline numbers.</p>
+            <h6 class="card-subtitle mb-2 text-muted">Steps -</h6>
+            <ul class="list-group">
+              <li class="list-group-item">Stay in the frame of your camera alone and with suuficient lighting for the entire duration.</li>
+              <li class="list-group-item">Have Security Keys with you as you would require it to proceed.</li>
+              <li class="list-group-item">You are allowed to make only one vote per election.</li>
+              <li class="list-group-item">You are allowed to choose only one candidate per election.</li>
+              <li class="list-group-item">Candidates information are available on the page.</li>
+              <li class="list-group-item">Make sure that you are selecting your wanted candidate by confirming the name and symbol on the screen.</li>
+              <li class="list-group-item">After selecting the candidates make sure to submit the vote.</li>
+              <li class="list-group-item">Result will be announced after 5 days of election being completed.</li>
+              <li class="list-group-item">You can verify your vote after the election results are announced.</li>
+            </ul>
+            <div class="form-check mt-3">
+              <input class="form-check-input" type="checkbox" id="understandCheck">
+              <label class="form-check-label" for="understandCheck">
+                I understand and will follow above steps.
+              </label>
+            </div>
+            <div class="mt-4">
+              <button class="btn btn-secondary mr-2">Cancel</button>
+              <button class="btn btn-primary" onclick="window.location.href='voting-panel.html'">Proceed</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
